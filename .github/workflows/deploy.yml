@@ -1,0 +1,29 @@
+name: Deploy Static Site to GitHub Pages
+
+on:
+  push:
+    branches: [main]  # or 'master' if you're using that branch
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout source code
+        uses: actions/checkout@v4
+
+      - name: Set up GitHub Pages
+        uses: actions/configure-pages@v3
+
+      - name: Upload site files
+        uses: actions/upload-pages-artifact@v2
+        with:
+          path: '.'  # Use './dist' if you're using a build tool like Vite
+
+      - name: Deploy to GitHub Pages
+        uses: actions/deploy-pages@v2

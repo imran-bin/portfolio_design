@@ -1,4 +1,4 @@
-/* 
+
 
 .open-sans-normal{
   font-family: "Open Sans", sans-serif;
@@ -8,8 +8,69 @@
   font-variation-settings:
     "wdth" 100;
 
-} */
+}
 
-h3{
-    background-color: brown;
+.nav-title{
+    font-weight: 800;
+    font-size: 45px
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 200px;
+}
+.btn-primary{
+    background-color: #FD6E0A;
+    color: #FFFFFF;
+    padding: 18px 36px;
+    font-weight: bold;
+    font-size: 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+nav ul li{
+   list-style: none;
+   margin-right: 50px;
+}
+
+nav li a{
+    text-decoration: none;
+}
+.dark-2
+{
+    color: #474747;
+}
+
+nav ul{
+    display: flex;
+    align-items: center;
+ 
+}
+.banner{
+    display: flex;
+    margin: 0 35px 0 200px;
+
+}
+.banner-content{
+    width: 585px;
+
+}
+.content-gretting{
+    font-weight: semi-bold;
+    font-size: 45px;
+}
+.content-title{
+    font-weight: bold;
+    font-size: 65px;
+}
+.profile-image{
+    width: 584px;
+}
+.header{
+    background-image: url('/images/developer.png'),url('/images/header_bg.png');
+    background-repeat: no-repeat;
+    background-position: top left,bottom right;
 }

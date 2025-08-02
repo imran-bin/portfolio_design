@@ -1,8 +1,8 @@
-name: Deploy static site to Pages
+name: Deploy HTML & CSS to GitHub Pages
 
 on:
   push:
-    branches: ["main"]  # or "master" if that's your branch
+    branches: ["main"]  # or "master" if you're using that
 
 permissions:
   contents: read
@@ -22,17 +22,17 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Checkout
+      - name: 📦 Checkout code
         uses: actions/checkout@v4
 
-      - name: Setup Pages
+      - name: ⚙️ Setup GitHub Pages
         uses: actions/configure-pages@v3
 
-      - name: Upload Pages artifact
+      - name: 📤 Upload static files
         uses: actions/upload-pages-artifact@v2
         with:
-          path: '.'  # or './dist' if you're using a builder
+          path: '.'  # <-- use './dist' if using a build tool
 
-      - name: Deploy to GitHub Pages
+      - name: 🚀 Deploy to GitHub Pages
         id: deployment
         uses: actions/deploy-pages@v2

@@ -200,3 +200,29 @@ hr{
     margin: 30px 0px;
 }
  
+footer{
+    background-color: #FFF8F3;
+    display: flex;
+    padding: 130px 230px;
+    gap: 117px;
+    margin-top: 113px;
+}
+input[type="text"],input[type="email"] ,footer textarea{
+  /* your styles here */
+   
+ 
+  border-radius: 5px;
+  font-size: 16px;
+  display: block;
+  padding: 10px 20px;
+  margin-bottom: 24px;
+  width: 100%;
+  border-radius: 5px;
+  height: 64px;
+  border: none;
+  
+}
+.footer-content{
+    width: 50%;
+    
+}

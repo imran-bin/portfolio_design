@@ -1,26 +1,26 @@
-
-
-.open-sans-normal{
-  font-family: "Open Sans", sans-serif;
-  font-optical-sizing: auto;
-  font-weight:500;
-  font-style: normal;
-  font-variation-settings:
-    "wdth" 100;
+.open-sans-normal {
+    font-family: "Open Sans", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 500;
+    font-style: normal;
+    font-variation-settings:
+        "wdth" 100;
 
 }
 
-.nav-title{
+.nav-title {
     font-weight: 800;
     font-size: 45px
 }
-nav{
+
+nav {
     display: flex;
     align-items: center;
     justify-content: space-between;
     margin: 0 200px;
 }
-.btn-primary{
+
+.btn-primary {
     background-color: #FD6E0A;
     color: #FFFFFF;
     padding: 18px 36px;
@@ -31,46 +31,126 @@ nav{
     cursor: pointer;
 }
 
-nav ul li{
-   list-style: none;
-   margin-right: 50px;
+nav ul li {
+    list-style: none;
+    margin-right: 50px;
 }
 
-nav li a{
+nav li a {
     text-decoration: none;
 }
-.dark-2
-{
+
+.dark-2 {
     color: #474747;
+    font-weight: regular;
+    font-size: 18px
 }
 
-nav ul{
+nav ul {
     display: flex;
     align-items: center;
- 
+
 }
-.banner{
+
+.banner {
     display: flex;
     margin: 0 35px 0 200px;
 
 }
-.banner-content{
+
+.banner-content {
     width: 585px;
 
 }
-.content-gretting{
+
+.content-gretting {
     font-weight: semi-bold;
     font-size: 45px;
 }
-.content-title{
+
+.content-title {
     font-weight: bold;
     font-size: 65px;
 }
-.profile-image{
+
+.profile-image {
     width: 584px;
 }
-.header{
-    background-image: url('/images/developer.png'),url('/images/header_bg.png');
+
+.header {
+    background-image: url('/images/developer.png'), url('/images/header_bg.png');
     background-repeat: no-repeat;
-    background-position: top left,bottom right;
+    background-position: top left, bottom right;
+}
+
+main {
+    max-width: 1140px;
+    margin: 0 auto;
+}
+
+section {
+    margin-top: 130px;
+}
+
+.about-section {
+    padding: 131px 156px;
+    text-align: center;
+    background-color: #FFF8F3;
+
+}
+
+.section-title {
+    font-weight: bold;
+    font-size: 35px;
+    margin-bottom: 30px;
+}
+
+.about-items {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 30px;
+    gap: 50px;
+}
+
+.about-item-description {
+    color: #474747;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.about-me {
+    background-color: #FFFFFF;
+    border: 1px solid;
+    margin: 2px;
+}
+
+.section-title {
+    text-align: center;
+}
+
+.descrition {
+    text-align: center;
+}
+
+.card-container {
+    display: flex;
+    gap: 24px;
+    margin-top: 50px;
+}
+
+.card {
+     
+    box-shadow: 0px 6px 50px 0px rgb(0, 0, 0, 0.06);
+    padding: 30px;
+    border-radius: 5px;
+    
+}
+.card-title{
+    font-weight: bold;
+    font-size: 20px;
+    margin: 20px 0px;
+}
+.card-description{
+    font-weight: regular;
+    font-size: 16px;
 }
